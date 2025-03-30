@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pełnoekranowe Zdjęcie</title>
+    <title>Cztery Pełnoekranowe Filmy</title>
     <style>
         * {
             margin: 0;
@@ -13,16 +13,21 @@
         html, body {
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
         }
-        img {
-            width: 100vw;
-            height: 100vh;
+        video {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <img src="zdjecie.jpg" alt="Pełnoekranowe Zdjęcie">
+    <video src="jeden.mp4" autoplay loop muted></video>
+    <video src="dwa.mp4" autoplay loop muted></video>
+    <video src="trzy.mp4" autoplay loop muted></video>
+    <video src="cztery.mp4" autoplay loop muted></video>
 </body>
 </html>
